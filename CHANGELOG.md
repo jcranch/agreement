@@ -1,4 +1,4 @@
-# Changelog for `consistent`
+# Changelog for `agreement`
 
 All notable changes to this project will be documented in this file.
 

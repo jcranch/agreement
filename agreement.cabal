@@ -4,14 +4,16 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 
-name:           consistent
+name:           agreement
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/consistent#readme>
-homepage:       https://github.com/jcranch/consistent#readme
-bug-reports:    https://github.com/jcranch/consistent/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2023 Author name here
+synopsis:       Idiomatic data structure for agreement
+description:    Please see the README on GitHub at <https://github.com/jcranch/consistent#readme>
+category:       Data
+homepage:       https://github.com/jcranch/agreement#readme
+bug-reports:    https://github.com/jcranch/agreement/issues
+author:         James Cranch
+maintainer:     j.d.cranch@sheffield.ac.uk
+copyright:      2023 James Cranch
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
@@ -21,13 +23,13 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/jcranch/consistent
+  location: https://github.com/jcranch/agreement
 
 library
   exposed-modules:
-      Data.Consistent
+      Data.Agreement
   other-modules:
-      Paths_consistent
+      Paths_agreement
   hs-source-dirs:
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
@@ -35,17 +37,17 @@ library
       base >=4.7 && <5
   default-language: Haskell2010
 
-test-suite consistent-test
+test-suite agreement-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
       LengthSpec
-      Paths_consistent
+      Paths_agreement
   hs-source-dirs:
       test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
-    , consistent
+      agreement
+    , base >=4.7 && <5
     , hspec >=2.7 && <2.11
   default-language: Haskell2010

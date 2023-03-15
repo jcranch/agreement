@@ -1,6 +1,6 @@
 module LengthSpec (spec) where
 
-import Data.Consistent
+import Data.Agreement
 import Test.Hspec
 
 
