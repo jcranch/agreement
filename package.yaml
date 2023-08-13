@@ -1,5 +1,5 @@
-name:                agreement
-version:             0.1.0.0
+name:                agreeing
+version:             0.2.0.0
 github:              "jcranch/agreement"
 license:             BSD3
 author:              "James Cranch"
@@ -12,7 +12,7 @@ extra-source-files:
 
 synopsis:            Idiomatic data structure for agreement
 category:            Data
-description:         Please see the README on GitHub at <https://github.com/jcranch/consistent#readme>
+description:         Please see the README on GitHub at <https://github.com/jcranch/agreeing#readme>
 
 dependencies:
 - base >= 4.7 && < 5
@@ -32,7 +32,7 @@ library:
   source-dirs: src
 
 tests:
-  agreement-test:
+  agreeing-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
@@ -40,5 +40,5 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - agreement
-    - hspec              >= 2.7     && < 2.11
+    - agreeing
+    - hspec              >= 2.7     && < 2.12
