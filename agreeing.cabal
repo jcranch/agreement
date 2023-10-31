@@ -1,11 +1,11 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.35.2.
+-- This file has been generated from package.yaml by hpack version 0.36.0.
 --
 -- see: https://github.com/sol/hpack
 
 name:           agreeing
-version:        0.2.0.0
+version:        0.2.1.0
 synopsis:       Idiomatic data structure for agreement
 description:    Please see the README on GitHub at <https://github.com/jcranch/agreeing#readme>
 category:       Data
