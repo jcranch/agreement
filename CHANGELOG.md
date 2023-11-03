@@ -8,7 +8,7 @@ and this project adheres to the
 
 ## 0.2.1.0 - 2023-10-30
 
-* `Eq`, `Ord`, `Show`, `Applicative` and `Monad` instances
+* ADDED: `Eq`, `Ord`, `Show`, `Applicative` and `Monad` instances
 
 ## 0.1.0.0 - 2023-03-15
 
