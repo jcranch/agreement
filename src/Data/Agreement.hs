@@ -1,3 +1,5 @@
+{-# LANGUAGE CPP #-}
+
 -- | A simple data structure helping us ask questions of the following
 -- sort: "does all this data have the same /BLANK/ and if so what is
 -- it?"
@@ -28,11 +30,15 @@
 -- This however cannot possibly correspond to a `Monad` instance (if
 -- the first argument of `>>=` is Anybody, there's no way of
 -- inspecting the second). We thus choose another, which does.
-
 module Data.Agreement (
   Agreement(..),
   getSomebody,
   ) where
+
+#if MIN_VERSION_GLASGOW_HASKELL(9,6,0,0)
+#else
+import Control.Applicative (liftA2)
+#endif
 
 import Data.Semigroup (Semigroup(..),
                        stimesIdempotentMonoid)
